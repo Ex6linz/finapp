@@ -1,0 +1,38 @@
+/* styles/main.css */
+
+/* Dla slidera react-slick */
+.slick-slider {
+    margin: 50px auto;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.home-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa; /* Opcjonalnie, aby dać kontrast do paska nawigacyjnego */
+    border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-around; /* Lub inną właściwość flexbox, którą chcesz użyć */
+    align-items: center; /* Centrowanie elementów w pionie */
+    padding: 10px; /* Opcjonalne: dodatkowy padding */
+    background-color: #f7f7f7; /* Opcjonalne: tło dla navbar-links */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333; /* Opcjonalne: kolor dla linków */
+    padding: 5px 10px; /* Opcjonalne: padding dla linków */
+}
+
+.navbar-links a:hover {
+    color: #555; /* Opcjonalne: zmiana koloru podczas najechania */
+}

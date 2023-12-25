@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center; */
+    width: 100%;
+    padding: 0.5rem 2rem;
+    background-color: #ffffff; /* Tło navbara */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtelny cień dla głębi */
+}
+
+.nav-logo {
+    display: flex;
+    /* align-items: center; /* Pionowe wycentrowanie ikony */
+    justify-content: center; /* Poziome wycentrowanie ikony, jeśli jest potrzebne */
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333; /* Kolor tekstu */
+    margin-left: 20px; /* Odstęp między linkami */
+    font-size: 16px; /* Rozmiar tekstu */
+    transition: color 0.3s ease; /* Animacja koloru tekstu */
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Kolor tekstu przy najechaniu */
+}
+
+

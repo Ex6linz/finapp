@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem; /* Dostosuj, aby pasowało do ogólnego układu */
+  background-color: #ffffff; /* Tło navbara */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtelny cień dla głębi */
+}
+
+/* Styl dla loga w navbarze */
+.navbar .logo {
+  /* Możesz chcieć dostosować lub usunąć te style,
+     jeśli logo w navbarze ma inny wygląd */
+  height: auto; /* Dostosuj wysokość logo */
+  width: 100px; /* Dostosuj szerokość logo */
+  transition: filter 300ms; /* Zachowaj animację */
+}
+
+/* Styl dla linków w navbarze */
+.navbar a {
+  text-decoration: none;
+  color: #333333; /* Kolor tekstu */
+  margin: 0 10px; /* Odstęp między linkami */
+  font-size: 16px; /* Rozmiar tekstu */
+  transition: color 0.3s ease; /* Animacja koloru tekstu */
+}
+
+.navbar a:hover {
+  color: #007bff; /* Kolor tekstu przy najechaniu */
+}
+
+/* Stylizacja dla kontenera głównego */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.App {
+  /* Usunięcie maksymalnej szerokości pozwoli na rozszerzenie na całą stronę */
+  margin: 0 auto;
+  padding: 0; /* Usunięcie paddingu, jeśli nie jest potrzebny */
+  text-align: center;
+}
