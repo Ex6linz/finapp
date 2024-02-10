@@ -1,0 +1,23 @@
+/* Chart container with a fixed height */
+/* .chart-container {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+} */
+
+/* Responsive chart container based on viewport height */
+.chart-container-responsive {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    padding: 20px;
+}
+
+.chart-container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    height: 350px;
+
+}

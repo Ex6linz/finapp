@@ -1,0 +1,45 @@
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+    width: 1856px;
+    height: 500px;
+    max-width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Dodaj style dla przycisków */
+.previous, .next {
+    position: absolute;
+    top: 50%; /* Centruje przyciski w pionie */
+    transform: translateY(-50%); /* Przesuwa przyciski do góry o połowę ich wysokości */
+    background-color: #fff; /* Tło dla widoczności */
+    border: none; /* Usuń domyślną ramkę */
+    padding: 10px; /* Dodaj padding dla lepszego wyglądu */
+    cursor: pointer; /* Kursor wskazujący na przycisk */
+    /* Możesz dodać inne style, jak potrzebujesz */
+}
+
+.previous {
+    left: 20px; /* Dostosuj odległość od lewej krawędzi */
+}
+
+.next {
+    right: 20px; /* Dostosuj odległość od prawej krawędzi */
+}

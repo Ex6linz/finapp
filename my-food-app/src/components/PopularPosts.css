@@ -1,0 +1,13 @@
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.blog-post {
+    width: 300px; /* or whatever width you prefer */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
