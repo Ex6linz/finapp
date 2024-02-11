@@ -21,3 +21,21 @@
     height: 350px;
 
 }
+
+canvas {
+    margin: auto;
+    align-items: center;
+    height: 400px;
+    width: 1000px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.input-container input {
+    margin: 10px;
+}

@@ -1,0 +1,51 @@
+/* Add this to your Navbar.css file */
+
+/* Ensure the navbar stretches and items fit properly */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Style for the logo or brand name */
+.navbar-brand {
+    flex-grow: 1;
+    font-size: 1.5em; /* Adjust size as needed */
+}
+
+/* Navigation list */
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Individual navigation items */
+.navbar-nav li {
+    padding: 10px;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav li {
+        width: 100%; /* Full width links on smaller screens */
+        padding: 10px 20px; /* Larger hit area for links */
+    }
+
+    /* Optional: Toggle for expanding/collapsing the navigation on smaller screens */
+    .navbar-toggle {
+        display: none; /* Hidden by default */
+    }
+
+    /* When the toggle is active (e.g., after clicking a hamburger icon) */
+    .navbar-nav.active {
+        display: flex;
+    }
+}

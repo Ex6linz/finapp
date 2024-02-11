@@ -3,9 +3,35 @@ import "slick-carousel/slick/slick-theme.css";
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import Slider from 'react-slick';
+import './Slider.css'
+
+
+function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "red" }}
+            onClick={onClick}
+        />
+    );
+}
+
+function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+        <div
+            className={className}
+            style={{ ...style, background: "green" }}
+            onClick={onClick}
+        />
+    );
+}
+
 
 const SliderComponent = () => {
-    // Settings for the slider
+
+
     const settings = {
         dots: true,
         infinite: true,
@@ -14,17 +40,29 @@ const SliderComponent = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+
+
     };
 
+
     return (
-        <div className="slider-container">
-            <Slider {...settings}>
+        <div>
 
-                <div><img src="https://via.placeholder.com/1900x400" alt="Slide 1"/></div>
-                <div><img src="https://via.placeholder.com/1900x400" alt="Slide 2"/></div>
-                <div><img src="https://via.placeholder.com/1900x400" alt="Slide 3"/></div>
+            <div className="slider-container">
 
-            </Slider>
+
+                <Slider {...settings}>
+
+                    <div><img src="https://via.placeholder.com/1920x400" alt="Slide 1"/></div>
+                    <div><img src="https://via.placeholder.com/1920x400" alt="Slide 2"/></div>
+                    <div><img src="https://via.placeholder.com/1920x400" alt="Slide 3"/></div>
+
+                </Slider>
+
+            </div>
+
         </div>
     );
 };

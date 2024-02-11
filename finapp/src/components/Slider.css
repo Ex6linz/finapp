@@ -1,0 +1,17 @@
+.slick-prev, .slick-next {
+    background-color: #fff; /* Change color as needed */
+    color: #000; /* Change color as needed */
+    border-radius: 25px; /* Optional: for circular arrows */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
